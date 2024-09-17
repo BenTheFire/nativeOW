@@ -1,0 +1,40 @@
+{
+	"manifest_version":1,
+	"type":"WebApp",
+	"meta":{
+		"name":"Thunder of Heroes",
+		"version":"0.0.0.1",
+		"minimum-overwolf-version":"0.199.0.15",
+		"author":"Benedek Pongrácz",
+        "author_display": "BenTheFire",
+		"icon":"img/icon.png",
+		"icon_gray":"img/icon.png",
+		"description":"Demo App"
+	},
+    "permissions": ["Hotkeys", "GameInfo"],
+	"data": {
+        "game_targeting": {
+            "type": "dedicated",
+            "game_ids": [ 10624 ]
+        },
+		"start_window":"desktop",
+		"windows":{
+			"desktop":{
+					"file":"appWindows/desktop/index.html",
+                    "desktop_only": true,
+					"transparent": false,
+					"resizable": true,
+					"use_os_windowing": true,
+
+					"size": {
+						"width":700,
+						"height":400
+						},
+					"min_size": {
+						"width":400,
+						"height":400
+					}
+				}
+		}
+	}
+}
